@@ -24,10 +24,12 @@ const routes = [
     component:JobsView
   },
   {
-    path: '/jobs-detail',
+    path:'/jobs-detail/:id',
     name:'jobs-detail',
-    component: JobDetailView
+    component:JobDetailView,
+    props : true
   }
+
 ]
 
 const router = createRouter({
